@@ -1,0 +1,23 @@
+{
+  "name": "all-elec-shop",
+  "version": "1.0.0",
+  "description": "MERN ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/server.js\"",
+    "prestart": "npm run build"
+  },
+  "author": "Mikayel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
