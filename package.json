@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production node dist/server.js",
     "dev": "concurrently \"tsc --watch\" \"nodemon -q dist/server.js\"",
-    "prestart": "npm run build"
+    "prestart": "npm run build",
+    "data:import": "node dist/seeder",
+    "data:destroy": "node dist/seeder -d"
   },
   "author": "Mikayel",
   "license": "MIT",
