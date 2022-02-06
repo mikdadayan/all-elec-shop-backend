@@ -14,6 +14,9 @@ interface ProductType {
   numReviews: number;
 }
 
+// @desc    Fetch all products
+// @route   GET /api/products
+// @access  Public
 export const getProducts: RequestHandler = async (_req, res, _next) => {
   try {
     const products = await Product.find({});
@@ -25,6 +28,9 @@ export const getProducts: RequestHandler = async (_req, res, _next) => {
   }
 };
 
+// @desc    Fetch single product
+// @route   GET /api/products/:id
+// @access  Public
 export const getProduct: RequestHandler = async (req, res, _next) => {
   try {
     const product = await Product.findById(req.params.id);
