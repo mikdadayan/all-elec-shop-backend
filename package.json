@@ -14,6 +14,8 @@
   "dependencies": {
     "@types/cors": "^2.8.12",
     "@types/mongoose": "^5.11.97",
+    "colors.ts": "^1.0.20",
+    "colorts": "^0.1.63",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
