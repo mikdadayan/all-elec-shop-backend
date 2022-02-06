@@ -12,8 +12,10 @@
   "author": "Mikayel",
   "license": "MIT",
   "dependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.12",
     "@types/mongoose": "^5.11.97",
+    "bcrypt": "^5.0.1",
     "colors.ts": "^1.0.20",
     "colorts": "^0.1.63",
     "cors": "^2.8.5",
