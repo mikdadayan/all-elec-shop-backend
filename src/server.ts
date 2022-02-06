@@ -2,8 +2,11 @@ import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import productRouter from './api/routes/products';
+import connectDB from './config/db';
 
 dotenv.config();
+
+connectDB();
 
 const PORT = process.env.PORT || 2900;
 const app: Express = express();
