@@ -2,6 +2,7 @@ import express, { Express, Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import productRouter from './api/routes/products';
+import { notFound, errorHandler } from './middlewares/errorMiddleware';
 import connectDB from './config/db';
 import { enable } from 'colors.ts';
 
@@ -22,6 +23,9 @@ app.get('/', (_req: Request, res: Response) => {
 });
 
 app.use('/api', productRouter);
+
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(
